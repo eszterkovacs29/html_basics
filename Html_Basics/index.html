@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="addBookForm">
+        <fieldset id="addbookfs">
+            <legend>Fill out the book's information</legend>
+            <div id="divTitle">
+                <label for="Title">Title:</label>
+                <input type="text" name="Title" id="title">
+            </div>
+            <div id="divAuthor">
+                <label for="Author">Author:</label>
+                <input type="text" name="Author" id="author">
+            </div>
+            <div id="divIsbn">
+                <label for="ISBN">ISBN:</label>
+                <input type="text" name="ISBN" id="isbn" minlength="10" maxlength="13">
+            </div>  
+        </fieldset>
+        <fieldset name="Tags" id="tagsCheckbox">
+            <legend>Choose tags for the book</legend>
+            <div id="divRomance">
+                <label for="Romance">Romance</label>
+                <input type="checkbox" name="tag" id="romance" value="Romance">
+            </div>
+            <div id="divCrime">
+                <label for="Crime">Crime</label>
+                <input type="checkbox" name="tag" id="crime" value="Drama">
+            </div>
+            <div id="divFantasy">
+                <label for="Fantasy">Fantasy</label>
+                <input type="checkbox" name="tag" id="fantasy" value="Fantasy">
+            </div>
+            <div id="divSciFi">
+                <label for="Sci-Fi">Sci-Fi</label>
+                <input type="checkbox" name="tag" id="scifi" value="Sci-Fi">
+            </div>
+            <div id="divDrama">
+                <label for="Drama">Drama</label>
+                <input type="checkbox" name="tag" id="drama" value="Drama">
+            </div>
+        </fieldset>
+        <div id="divButton">
+            <button type="submit" id="submitButton">Submit</button>
+        </div>
+        
+
+
+    </form>
+    <fieldset id="searchBox">
+        <legend>Search box</legend>
+        <label for="AuthorSearch">Enter the author's name</label>
+        <input type="text" name="AuthorSearch" id="authorsearch">
+        <button type="button" id="searchbutton">Search</button>
+    </fieldset>
+    <table id="bookstable" style="display: none;">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>ISBN</th>
+                <th>Tag</th>
+           </tr>
+        </thead>
+        <tbody id="resultstable"></tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>

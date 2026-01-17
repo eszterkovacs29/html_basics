@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(221, 211, 195);
+}
+
+#welcomeBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: solid 1px grey;
+    height: 450px;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 250px;
+    background-image: url(library.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 2px 5px grey;
+}
+h1{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 3px 5px 5px black;
+}
+button{
+    margin: 10px;
+    height: 30px;
+    width: 80px;
+    color: black;
+    font-weight: bold;
+}
