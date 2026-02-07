@@ -1,24 +1,49 @@
-body{
-    background-color: rgb(224, 201, 142);
-    opacity: 25;
-}
-
-div{
-    margin: 15px;
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    background-color: bisque;
+    height: 100vh;
+    margin: 0;
+    background-image: url(loginBook.jpg);
 }
-#loginForm{
-    border: solid 2px black;
-    margin-left: 250px;
-    margin-right: 250px;
-    margin-top: 50px;
-    padding: 100px;
-    box-shadow: 2px 1px 3px;
+
+.login-box {
+    background: #ffffff;
+    padding: 30px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid black;
 }
-p{
-    font-weight: bold;
+
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    background: #6ac5e9;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.login-box button:hover {
+    background: #2521fd;
 }

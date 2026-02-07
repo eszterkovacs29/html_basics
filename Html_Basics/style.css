@@ -1,46 +1,143 @@
-body{
-    background-color: beige;
+/* ===== Global ===== */
+* {
+    box-sizing: border-box;
 }
 
-#addbookfs{
-    background-color: azure;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    padding: 30px;
+    color: #333;
+    background-image: url(loginBook.jpg);
+}
+
+/* ===== Form container ===== */
+form {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Fieldsets ===== */
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    padding: 0 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* ===== Input groups ===== */
+#divTitle,
+#divAuthor,
+#divIsbn {
     display: flex;
-    justify-content: space-around;
-    padding: 15px;
-    flex-wrap: wrap;
-    box-shadow: 3px 3px 2px gray;  
+    flex-direction: column;
+    margin-bottom: 15px;
 }
 
-#tagsCheckbox{
-    background-color: azure;
-    box-shadow: 3px 3px 2px gray;
-    width: 100%;
+label {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+/* ===== Tags checkboxes ===== */
+#tagsCheckbox div {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    
-
-
+    align-items: center;
+    margin-bottom: 8px;
 }
 
-#divButton{
-    display: flex;
-    justify-content: center;
+#tagsCheckbox label {
+    margin-right: 10px;
+    font-weight: normal;
 }
 
-#searchBox{
-    margin-top: 10px;
-    box-shadow: 3px 3px 2px gray;
-    background-color: azure;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-legend{
+/* ===== Submit button ===== */
+#divButton {
     text-align: center;
-    float: none;
-    width: auto;
-    padding: 0 5px;
+}
+
+#submitButton {
+    padding: 12px 25px;
+    font-size: 16px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#submitButton:hover {
+    background: #43a047;
+}
+
+/* ===== Search box ===== */
+#searchBox {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+#searchBox input {
+    margin: 10px 0;
+    width: 100%;
+}
+
+#searchbutton {
+    padding: 10px 20px;
+    background: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#searchbutton:hover {
+    background: #1e88e5;
+}
+
+/* ===== Table ===== */
+#bookstable {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#bookstable th {
+    background: #f1f1f1;
+    padding: 12px;
+    text-align: left;
+}
+
+#bookstable td {
+    padding: 10px;
+    border-top: 1px solid #eee;
 }
 

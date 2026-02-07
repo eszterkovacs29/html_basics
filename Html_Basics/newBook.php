@@ -26,8 +26,7 @@ $stmt->execute([
     'tags'=> implode(",", $tags)
 ]);
 
-
-
-
+echo "<script>alert('You added the book successfully!');
+    window.location.href = 'mainPage.html'; </script>";
 
 ?>

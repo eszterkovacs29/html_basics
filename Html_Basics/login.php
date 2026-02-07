@@ -29,7 +29,7 @@ if(!$user){
 
 if($user['username'] == $username && $user['password'] == $password){
     echo "<script>alert('You logged in successfully!');
-    window.location.href = 'index.html'; </script>";
+    window.location.href = 'mainPage.html'; </script>";
 } 
 else{
     echo "<script>alert('You entered the wrong username or password!');

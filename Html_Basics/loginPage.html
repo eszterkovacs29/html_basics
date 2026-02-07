@@ -7,29 +7,16 @@
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <div id="welcomeText">
-        <h1>Welcome to Library.com!</h1>
-    </div>
-    <div id="paragraph">
-        <p>Please login, using your username and password.</p>
-    </div>
-    <div id="loginForm">
-        <form action="login.php" method="post">
-            <div>
-                <label for="username">Username</label>
-                <input type="text" name="username" id="usernameBox">
-            </div>
-            <div>
-                <label for="password">Password</label>
-                <input type="password" name="password" id="passwordBox" >
-            </div>
-            <div>
-                <button type="submit" id="loginBtn">Login</button>
-            </div>
-    </div>
 
-    </form>
-    
+    <div class="login-box">
+        <h2>Login using your username and password.</h2>
+        <form action="login.php" method="post">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit" id="loginBtn">Login</button>
+        </form>
+    </div>
 </body>
-<script src="login.js"></script>
 </html>
+
+
